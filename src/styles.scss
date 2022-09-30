@@ -1,0 +1,74 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+// #ng-chat-title .secondary-background{
+//     background-color: #804e7d!important;
+// }
+// #ng-chat.light-theme .primary-background
+// {
+//     background-color: #804e7d!important;
+//     color: black;
+// }
+// #ng-chat.light-theme .message-sent-date{
+//     color: black!important; 
+// }
+
+$primary-color: #FFF;
+$secondary-color: #E3E3E3;
+$text-color: #5C5C5C;
+
+%text-definition {
+    color: #80227b!important;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#ng-chat.light-theme
+{
+    @extend %text-definition;
+
+    .primary-background
+    {
+        background-color: $primary-color;
+    }
+    .secondary-background
+    {
+        background-color: #FAFAFA;
+    }
+    .primary-outline-color
+    {
+        border-color:#A3A3A3;
+    }
+    .primary-text
+    {
+        @extend %text-definition;
+    }
+    .friends-search-bar
+    {
+        background-color: $primary-color;
+    }
+    .unread-messages-counter-container, .ng-chat-people-action, .ng-chat-people-action > i
+    {
+        color: $text-color;
+        background-color: $secondary-color;
+    }
+    .load-history-action
+    {
+        background-color: $secondary-color;
+    }
+    .chat-window-input
+    {
+        background-color: $primary-color;   
+    }
+    .sent-chat-message-container,  .file-message-container
+    {
+        background-color:$secondary-color;
+        border-color: $secondary-color;
+    }
+    .received-chat-message-container, .file-message-container.received
+    {
+        background-color:$primary-color;
+        border-color: $secondary-color;
+    }
+}
